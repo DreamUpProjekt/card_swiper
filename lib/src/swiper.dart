@@ -896,7 +896,7 @@ class _StackViewState extends _CustomLayoutStateBase<_StackSwiper> {
 
   void _updateValues() {
     if (widget.scrollDirection == Axis.horizontal) {
-      const space = 7.0;
+      const space = 15.0;
       offsets = widget.axisDirection == AxisDirection.left
           ? [
               -space,
@@ -913,7 +913,7 @@ class _StackViewState extends _CustomLayoutStateBase<_StackSwiper> {
               -space,
             ];
     } else {
-      const space = 7.0;
+      const space = 15.0;
       offsets = widget.axisDirection == AxisDirection.up
           ? [
               -space,
