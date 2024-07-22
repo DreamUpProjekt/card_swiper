@@ -899,54 +899,34 @@ class _StackViewState extends _CustomLayoutStateBase<_StackSwiper> {
       const space = 7.0;
       offsets = widget.axisDirection == AxisDirection.left
           ? [
-              // -space,
-              // -space / 3 * 2,
-              // -space / 3,
-              // 0.0,
-              // _swiperWidth,
               -space,
-              -space,
-              -space,
-              -space,
-              -space,
+              -space / 3 * 2,
+              -space / 3,
+              0.0,
+              space / 3,
             ]
           : [
-              // _swiperWidth,
-              // 0.0,
-              // -space / 3,
-              // -space / 3 * 2,
-              // -space,
-              -space,
-              -space,
-              -space,
-              -space,
+              space / 3,
+              0.0,
+              -space / 3,
+              -space / 3 * 2,
               -space,
             ];
     } else {
       const space = 7.0;
       offsets = widget.axisDirection == AxisDirection.up
           ? [
-              // -space,
-              // -space / 3 * 2,
-              // -space / 3,
-              // 0.0,
-              // _swiperHeight,
               -space,
-              -space,
-              -space,
-              -space,
-              -space,
+              -space / 3 * 2,
+              -space / 3,
+              0.0,
+              space / 3,
             ]
           : [
-              // _swiperHeight,
-              // 0.0,
-              // -space / 3,
-              // -space / 3 * 2,
-              // -space,
-              -space,
-              -space,
-              -space,
-              -space,
+              space / 3,
+              0.0,
+              -space / 3,
+              -space / 3 * 2,
               -space,
             ];
     }
